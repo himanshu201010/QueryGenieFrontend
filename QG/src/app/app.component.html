@@ -1,0 +1,23 @@
+<h1>Query Genie</h1>
+<div>
+  <form #myForm="ngForm" (ngSubmit)="onSubmit()">
+      <label for="name">Enter Query</label>
+      <input type="text" 
+             id="name" 
+             name="name" 
+             [(ngModel)]="formData.name" required>
+      <button type="submit">Submit</button>
+      <button (click)="onButtonClick(); $event.preventDefault()">
+            Reset Form
+        </button>
+      <div *ngIf="displayFormData">
+          <pre style="margin-bottom: 1rem;">
+                Form has been submitted successfully! 
+          </pre>
+          <pre style="font-weight: bold;">
+              Form Data: {{ submittedValue }}
+          </pre>
+         
+      </div>
+  </form>
+</div>

@@ -1,0 +1,32 @@
+/*app.component.css*/
+h1 {
+    text-align: center;
+    color: green;
+}
+
+div {
+    margin-left: 45%;
+}
+
+form div {
+    margin-top: 1rem;
+    margin-left: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    margin: 0 0.5rem 0.5rem 0;
+}
